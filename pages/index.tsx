@@ -33,45 +33,64 @@ function Home() {
             <nav className="navbar navbar-expand-lg navbar-light bg-light"
                  style={{backgroundColor: 'lightblue !important'}}>
                 <div className="container px-4 px-lg-5">
-                    <div style={{
-                        width: '18%',
+                    <div className="row" style={{
+                        width: "100%"
                     }}>
-                        <select className="form-select form-select-lg" aria-label=".form-select-lg example"
-                                style={{
-                                    fontSize: '1rem',
-                                }}>
-                            <option selected>Tất cả</option>
-                            <option value="1">Hà Nội</option>
-                            <option value="2">Tp. Hồ Chí Minh</option>
-                            <option value="3">Đà Nẵng</option>
-                        </select>
-                    </div>
-                    <div style={{
-                        width: '18%',
-                    }}>
-                        <select className="form-select form-select-lg" aria-label=".form-select-lg example"
-                                style={{
-                                    fontSize: '1rem',
-                                }}>
-                            <option selected>Tất cả</option>
-                            <option value="1">Hà Nội</option>
-                            <option value="2">Tp. Hồ Chí Minh</option>
-                            <option value="3">Đà Nẵng</option>
-                        </select>
-                    </div>
-                    <div className="input-group">
-                        <input className="form-control border-end-0 border rounded-pill" type="text" value="search"
-                               id="example-search-input"></input>
-                        <span className="input-group-append">
-                            <button
-                                className="btn btn-outline-secondary bg-white border-start-0 border rounded-pill ms-n3"
-                                type="button">
-                                <FaSearch/>
-                            </button>
-                        </span>
+                        <div className="col-2">
+                            <select className="form-select form-select-lg" aria-label=".form-select-lg example"
+                                    style={{
+                                        fontSize: '0.8rem',
+                                    }}>
+                                <option selected>Tất cả</option>
+                                <option value="1">Hà Nội</option>
+                                <option value="2">Tp. Hồ Chí Minh</option>
+                                <option value="3">Đà Nẵng</option>
+                            </select>
+                        </div>
+                        <div className="col-2">
+                            <select className="form-select form-select-lg" aria-label=".form-select-lg example"
+                                    style={{
+                                        fontSize: '0.8rem',
+                                    }}>
+                                <option selected>Tất cả</option>
+                                <option value="1">Ăn uống</option>
+                                <option value="2">Khách sạn</option>
+                                <option value="3">Thời trang</option>
+                            </select>
+                        </div>
+                        <div className="col-4">
+                            <div className="input-group">
+                                <input className="form-control border-end-0 border" type="text"
+                                       placeholder="search"
+                                       id="example-search-input"
+                                       style={{
+                                           fontSize: '0.8rem'
+                                       }}></input>
+                                <span className="input-group-append">
+                                    <button
+                                        className="btn btn-outline-secondary bg-white border-start-0 border ms-n3"
+                                        type="button">
+                                        <FaSearch/>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
+
+            <div className="bg-dark py-5" style={{
+                backgroundImage: "url('/image/banner_image.jpg')",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+            }}>
+                <div className="container px-4 px-lg-5 my-5">
+                    <div className="text-center text-white">
+                        <h1 className="display-4 fw-bolder">Shop in style</h1>
+                        <p className="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                    </div>
+                </div>
+            </div>
 
             <section className="py-5">
                 <div className="container px-4 px-lg-5 mt-5 card">
